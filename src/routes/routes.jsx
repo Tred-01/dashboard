@@ -4,7 +4,7 @@ import Customers from '@modules/customers/Customers'
 export default function RoutesPages () {
     return (
         <Routes>
-            <Route path='/' element={<Soon />}></Route>
+            <Route path='/dashboard' element={<Soon />}></Route>
             <Route path="/product" element={<Soon />}></Route>
             <Route path="/customers" element={<Customers />}></Route>
             <Route path="/income" element={<Soon />}></Route>

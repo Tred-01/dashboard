@@ -51,11 +51,31 @@
     }
     .user {
         @apply flex items-center gap-x-4;
+        img {
+            @apply w-[5rem] h-[5rem];
+        }
         h4 {
             @apply text-[1.4rem] font-semibold;
         }
         p {
             @apply text-[1rem] text-[#757575];
+        }
+    }
+}
+
+/* Media */
+.sidebar {
+    @apply max-sm:h-auto max-sm:flex-row max-sm:px-28;
+    .sidebarContent {
+        @apply max-sm:flex max-sm:items-center max-sm:gap-x-6;
+    }
+    .sidebarMenu  {
+        @apply max-sm:ml-10;
+        ul {
+            @apply max-sm:flex max-sm:gap-x-6;
+        }
+        .link {
+            @apply max-sm:m-0;
         }
     }
 }

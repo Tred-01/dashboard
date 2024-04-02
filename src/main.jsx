@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
-        <div className="flex w-full">
+        <div className="flex w-full max-md:flex-col ">
             <Sidebar />
             <main className="main w-full bg-[#FAFBFF]">
                 <RoutesPages />

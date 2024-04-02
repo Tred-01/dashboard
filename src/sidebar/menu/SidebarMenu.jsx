@@ -14,8 +14,8 @@ const SidebarMenu = () => {
     return (
         <nav className={styles.sidebarMenu}>
             <ul>
-                <li className={splitLocation[1] === "" ? styles.active : ""}>
-                    <Link to="/" className={styles.link}>
+                <li className={splitLocation[1] === "dashboard" ? styles.active : ""}>
+                    <Link to="/dashboard" className={styles.link}>
                         <IconDashboard />
                         <span>Dashboard</span>
                     </Link>
