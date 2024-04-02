@@ -11,6 +11,7 @@ export default defineConfig({
       '@modules': fileURLToPath((new URL('./src/modules', import.meta.url))),
       '@styles': fileURLToPath((new URL('./src/styles', import.meta.url))),
       '@routes': fileURLToPath((new URL('./src/routes', import.meta.url))),
+      '@src': fileURLToPath((new URL('./src', import.meta.url))),
     }
   },
   base: '',

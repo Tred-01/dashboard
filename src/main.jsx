@@ -8,9 +8,9 @@ import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
-        <div className="flex justify-between">
+        <div className="flex w-full">
             <Sidebar />
-            <main className="main">
+            <main className="main w-full bg-[#FAFBFF]">
                 <RoutesPages />
             </main>
         </div>
