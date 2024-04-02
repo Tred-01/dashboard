@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Arimo', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  /* background-color: #FAFBFF; */
+  background-color: #a1a1a1;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: calc(100vw / 1440 * 10);
+  @media (max-width:1440px) {
+    font-size: calc(100vw / 1440 * 10);
+  }
+  @media (max-width:768) {
+    font-size: calc(100vw / 500 * 10);
+  }
+  @media (max-width:500) {
+    font-size: calc(100vw / 375 * 10);
+  }
+}
+
+html, body {
+  margin: 0 auto;
+  min-width: 320px;
+  min-height: 90vh;
+  box-sizing: border-box;
+}

@@ -1,0 +1,45 @@
+.sidebar {
+    @apply bg-white h-lvh px-7 py-9;
+    .sidebarHead {
+        @apply flex gap-x-1 items-center;
+        h1 {
+            @apply text-[2rem] font-semibold;
+            span {
+                @apply text-[1rem] font-medium text-[#838383];
+            }
+        }
+    }
+    .sidebarMenu {
+        @apply py-[5rem];
+        .active {
+            .link {
+                @apply bg-[#5932EA];
+                svg {
+                    fill: transparent;
+                    stroke: white;
+                }
+                &:after {
+                    content: url('./src/assets/icons/IconRightWhite.svg');
+                }
+                span {
+                    @apply text-white;
+                }
+            }
+        }
+        .link {
+            @apply flex justify-start gap-x-3 items-center relative;
+            &:after {
+                content: url('./src/assets/icons/IconRight.svg');
+                position: absolute;
+                right: 0;
+            }
+            span {
+                @apply text-[1.2rem] text-[#9197B3];
+            }
+            svg {
+                fill: transparent;
+                stroke: #9197B3;
+            }
+        }
+    }
+}
